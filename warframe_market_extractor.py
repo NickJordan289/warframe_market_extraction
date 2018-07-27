@@ -51,12 +51,12 @@ for index, target in enumerate(targets): # loop through targets keeping track of
         buy_orders = []
         sell_orders = []
         try:
-            for i in range(len(data["payload"]["orders"])): # loop through sell and buy orders
-                if(data["payload"]["orders"][i]["user"]["status"] == "ingame"): # only go through orders that have online players
-                    if(data["payload"]["orders"][i]["order_type"] == "buy"): # seperate buy orders and sell orders into their own arrays
-                        buy_orders.append(data["payload"]["orders"][i]["platinum"]) # add to buy order storage
+            for order in data["payload"]["orders"]: # loop through sell and buy orders 
+                if(order["user"]["status"] == "ingame"): # only go through orders that have online players
+                    if(order["order_type"] == "buy"): # seperate buy orders and sell orders into their own arrays
+                        buy_orders.append(order["platinum"]) # add to buy order storage
                     else:
-                        sell_orders.append(data["payload"]["orders"][i]["platinum"]) # add to sell order storage
+                        sell_orders.append(order["platinum"]) # add to sell order storage
         except Exception as e:
             print(str(index) + ": " + str(e))
          
