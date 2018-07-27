@@ -1,14 +1,14 @@
 # warframe_market_extraction
 Searches warframe.market for item inputs and returns platinum values in a csv
 
-##Input
+## Input
 ```
 akbolto_prime_barrel
 carrier_prime_cerebrum
 legendary_fusion_core
 ```
 
-##Output
+## Output
 | Item                   | Buy Value     | Sell Value  |
 | ---------------------- |:-------------:| -----------:|
 | akbolto_prime_barrel   | 3p            | 2p          |
