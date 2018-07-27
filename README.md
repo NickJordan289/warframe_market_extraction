@@ -1,15 +1,16 @@
 # warframe_market_extraction
 Searches warframe.market for item inputs and returns platinum values in a csv
 
-Input
+##Input
 ```
 akbolto_prime_barrel
 carrier_prime_cerebrum
 legendary_fusion_core
 ```
 
-| Item                   | Buy Value              | Sell Value  |
+##Output
+| Item                   | Buy Value     | Sell Value  |
 | ---------------------- |:-------------:| -----------:|
-| akbolto_prime_barrel   | right-aligned | $1600       |
-| carrier_prime_cerebrum | centered      |   $12       |
-| legendary_fusion_core  | are neat      |    $1       |
+| akbolto_prime_barrel   | 3p            | 2p          |
+| carrier_prime_cerebrum | 61p           | 75p         |
+| legendary_fusion_core  | 280p          | 325p        |
